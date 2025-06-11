@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		840FBA962DF9AC8100E03E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840FB84E2DF7201200E03E17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840FB8552DF7201200E03E17;
+			remoteInfo = IdealistaTechTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		840FB8562DF7201200E03E17 /* IdealistaTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdealistaTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840FBA922DF9AC8100E03E17 /* IdealistaTechTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdealistaTechTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -15,6 +26,14 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+			);
+			target = 840FB8552DF7201200E03E17 /* IdealistaTechTest */;
+		};
+		842868CC2DF9D9FF009F3A72 /* Exceptions for "IdealistaTechTestTests" folder in "IdealistaTechTest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Mocks/Interface/advertisement_detail.json,
+				Mocks/Interface/advertisement_list.json,
 			);
 			target = 840FB8552DF7201200E03E17 /* IdealistaTechTest */;
 		};
@@ -29,10 +48,25 @@
 			path = IdealistaTechTest;
 			sourceTree = "<group>";
 		};
+		840FBA932DF9AC8100E03E17 /* IdealistaTechTestTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				842868CC2DF9D9FF009F3A72 /* Exceptions for "IdealistaTechTestTests" folder in "IdealistaTechTest" target */,
+			);
+			path = IdealistaTechTestTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		840FB8532DF7201200E03E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840FBA8F2DF9AC8100E03E17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				840FB8582DF7201200E03E17 /* IdealistaTechTest */,
+				840FBA932DF9AC8100E03E17 /* IdealistaTechTestTests */,
 				840FB8572DF7201200E03E17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				840FB8562DF7201200E03E17 /* IdealistaTechTest.app */,
+				840FBA922DF9AC8100E03E17 /* IdealistaTechTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +119,29 @@
 			productReference = 840FB8562DF7201200E03E17 /* IdealistaTechTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		840FBA912DF9AC8100E03E17 /* IdealistaTechTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840FBA982DF9AC8100E03E17 /* Build configuration list for PBXNativeTarget "IdealistaTechTestTests" */;
+			buildPhases = (
+				840FBA8E2DF9AC8100E03E17 /* Sources */,
+				840FBA8F2DF9AC8100E03E17 /* Frameworks */,
+				840FBA902DF9AC8100E03E17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840FBA972DF9AC8100E03E17 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				840FBA932DF9AC8100E03E17 /* IdealistaTechTestTests */,
+			);
+			name = IdealistaTechTestTests;
+			packageProductDependencies = (
+			);
+			productName = IdealistaTechTestTests;
+			productReference = 840FBA922DF9AC8100E03E17 /* IdealistaTechTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +154,11 @@
 				TargetAttributes = {
 					840FB8552DF7201200E03E17 = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					840FBA912DF9AC8100E03E17 = {
+						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
+						TestTargetID = 840FB8552DF7201200E03E17;
 					};
 				};
 			};
@@ -113,12 +177,20 @@
 			projectRoot = "";
 			targets = (
 				840FB8552DF7201200E03E17 /* IdealistaTechTest */,
+				840FBA912DF9AC8100E03E17 /* IdealistaTechTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		840FB8542DF7201200E03E17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840FBA902DF9AC8100E03E17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +207,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		840FBA8E2DF9AC8100E03E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		840FBA972DF9AC8100E03E17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840FB8552DF7201200E03E17 /* IdealistaTechTest */;
+			targetProxy = 840FBA962DF9AC8100E03E17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		840FB86A2DF7201300E03E17 /* Debug */ = {
@@ -147,17 +234,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IdealistaTechTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IdealistaChallenge;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aitorballesteros.IdealistaTechTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aitorballesteros.IdealistaChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -174,17 +263,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IdealistaTechTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IdealistaChallenge;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aitorballesteros.IdealistaTechTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aitorballesteros.IdealistaChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -311,6 +402,45 @@
 			};
 			name = Release;
 		};
+		840FBA992DF9AC8100E03E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aitorballesteros.IdealistaTechTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdealistaTechTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IdealistaTechTest";
+			};
+			name = Debug;
+		};
+		840FBA9A2DF9AC8100E03E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aitorballesteros.IdealistaTechTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdealistaTechTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IdealistaTechTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -328,6 +458,15 @@
 			buildConfigurations = (
 				840FB86A2DF7201300E03E17 /* Debug */,
 				840FB86B2DF7201300E03E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840FBA982DF9AC8100E03E17 /* Build configuration list for PBXNativeTarget "IdealistaTechTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840FBA992DF9AC8100E03E17 /* Debug */,
+				840FBA9A2DF9AC8100E03E17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
