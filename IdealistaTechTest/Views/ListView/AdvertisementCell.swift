@@ -15,10 +15,6 @@ class AdvertisementCell: UITableViewCell {
     
     var onFavoriteTapped: (() -> Void)?
 
-    @objc private func favoriteButtonTapped() {
-        onFavoriteTapped?()
-    }
-
     // MARK: - Private properties
     private let thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
@@ -106,6 +102,10 @@ class AdvertisementCell: UITableViewCell {
             favoriteButton.heightAnchor.constraint(equalToConstant: 32),
         ])
     }
+    
+    @objc private func favoriteButtonTapped() {
+        onFavoriteTapped?()
+    }
         
     func configure(with model: AdvertisementModel) {
         titleLabel.text = model.title
@@ -129,7 +129,7 @@ class AdvertisementCell: UITableViewCell {
         
         if model.isFavorite, let date = model.favoriteDate {
             let formatter = DateFormatter()
-            formatter.dateStyle = .short // o .medium / .long según prefieras
+            formatter.dateStyle = .short
             formatter.timeStyle = .none
             let dateString = formatter.string(from: date)
             favoriteSinceLabel.text = "Favorite since \(dateString)"
